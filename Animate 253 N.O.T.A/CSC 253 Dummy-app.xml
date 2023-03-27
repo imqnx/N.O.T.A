@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- 
+	Usage:
+
+	To localize the description, use the following format for the description element.
+	<description>
+	<text xml:lang="en">English App description goes here</text>
+	<text xml:lang="fr">French App description goes here</text>
+	<text xml:lang="ja">Japanese App description goes here</text>
+	</description>
+
+	To localize the name, use the following format for the name element.
+	<name>
+	<text xml:lang="en">English App name goes here</text>
+	<text xml:lang="fr">French App name goes here</text>
+	<text xml:lang="ja">Japanese App name goes here</text>
+	</name>
+-->
+<application xmlns="http://ns.adobe.com/air/application/26.0">
+  <id>N.O.T.A</id>
+  <versionNumber>1.0.0</versionNumber>
+  <versionLabel/>
+  <filename>CSC 253 Dummy</filename>
+  <description/>
+  <name>CSC 253 Dummy</name>
+  <copyright/>
+  <initialWindow>
+    <content>CSC%20253%20Dummy.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <fullScreen>false</fullScreen>
+    
+    <renderMode>cpu</renderMode>
+    <autoOrients>true</autoOrients>
+    <aspectRatio>portrait</aspectRatio>
+  </initialWindow>
+  <icon>
+    
+    <image192x192>AppIconsForPublish/192x192.png</image192x192>
+    <image144x144>AppIconsForPublish/144x144.png</image144x144>
+    <image96x96>AppIconsForPublish/96x96.png</image96x96>
+    <image72x72>AppIconsForPublish/72x72.png</image72x72>
+    <image48x48>AppIconsForPublish/48x48.png</image48x48>
+    <image36x36>AppIconsForPublish/36x36.png</image36x36>
+  </icon>
+  <customUpdateUI>false</customUpdateUI>
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+  <android>
+    <manifestAdditions><![CDATA[<manifest>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+</manifest>]]></manifestAdditions>
+  </android>
+  <supportedLanguages>en</supportedLanguages>
+</application>
